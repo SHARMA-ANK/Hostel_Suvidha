@@ -4,8 +4,8 @@ import {ApiError} from './ApiError.js';
 import { FaceMetaData } from '../models/faceMetaData.js';
 aws.config.update({
     region: 'us-east-1',
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID
+    secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID
 })
 
 const rekognition = new aws.Rekognition();
